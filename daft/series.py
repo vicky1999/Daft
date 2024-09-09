@@ -959,7 +959,7 @@ class SeriesPartitioningNamespace(SeriesNamespace):
 
 
 class SeriesListNamespace(SeriesNamespace):
-    def lengths(self) -> Series:
+    def length(self) -> Series:
         return Series._from_pyseries(self._series.list_count(CountMode.All))
 
     def get(self, idx: Series, default: Series) -> Series:

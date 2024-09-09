@@ -2922,7 +2922,7 @@ class ExpressionListNamespace(ExpressionNamespace):
         """
         return Expression._from_pyexpr(self._expr.list_count(mode))
 
-    def lengths(self) -> Expression:
+    def length(self) -> Expression:
         """Gets the length of each list
 
         Returns:
